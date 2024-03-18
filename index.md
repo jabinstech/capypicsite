@@ -2,7 +2,7 @@
 The ultimate capybara picture Discord bot.  
 **[http://invite.capy.jabinstech.net](Invite Now!)**
 ## Just the basics.
-CapyPic currently includes 3 commands.  
+CapyPic currently includes 4 commands.  
 `-capybara` - you know what that does.  
 `-capy` - does the same thing as `-capybara`  
 `-ping` - returns bot's response time  
