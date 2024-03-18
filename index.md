@@ -9,8 +9,8 @@ CapyPic currently includes 3 commands.
 `-about` - about bot.  
 ## Capybara Fan Club: The official home of CapyPic!
 *Note: this is not the support server, this is a fan club for all capybara fans!*  
-> Join the **Capybara Fan Club** today! We are a fun community and we love capybaras!  
-> [Join Now!](https://discord.gg/EsmjrtPnHv)
+Join the **Capybara Fan Club** today! We are a fun community and we love capybaras!
+[Join Now!](https://discord.gg/EsmjrtPnHv)
 ## How it works
 CapyPic is a fork of the currently in-development Jot3 bot, with just the basics you want for capybaras!
 It uses the API from [capy.lol](https://capy.lol/) to get all of its capybara pictures.
