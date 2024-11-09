@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapyPic</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #36393F;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0.5em;
+        }
+        a {
+            text-decoration: none;
+            color: #7289DA;
+        }
+        a:hover {
+            color: #99AAB5;
+        }
+
+        /* Triangle Background Accents */
+        .background-triangle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #7289DA;
+            opacity: 0.15;
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            transform: rotate(20deg);
+        }
+        .triangle1 {
+            top: 10%;
+            left: 5%;
+        }
+        .triangle2 {
+            top: 30%;
+            right: 10%;
+            transform: rotate(-30deg);
+        }
+        .triangle3 {
+            bottom: 20%;
+            left: 10%;
+            transform: rotate(45deg);
+        }
+
+        /* Layout styling */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #23272A;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #7289DA;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #7289DA;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 130px;
+        }
+        .buttons a:hover {
+            background-color: #99AAB5;
+        }
+
+        /* Featured Image */
+        .featured-image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .featured-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 5px solid #7289DA;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Features and Updates section */
+        .section {
+            padding: 30px 0;
+        }
+        .section h2 {
+            color: #7289DA;
+            text-align: center;
+        }
+        .features, .updates {
+            background-color: #2C2F33;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .feature, .update {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #40444B;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #23272A;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 10px 0;
+            color: #99AAB5;
+        }
+        .social-links a {
+            color: #7289DA;
+            margin: 0 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .buttons a {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Triangles for Decoration -->
+    <div class="background-triangle triangle1"></div>
+    <div class="background-triangle triangle2"></div>
+    <div class="background-triangle triangle3"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>CapyPic</h1>
+        <p>Fetch capybara pictures in your server!</p>
+        <div class="buttons">
+            <a href="YOUR_BOT_INVITE_LINK" target="_blank">Add Bot</a>
+            <a href="https://discord.gg/3TbqBBEZCC" target="_blank">Join Support Server</a>
+        </div>
+    </div>
+
+    <!-- Featured Image Section -->
+    <div class="container">
+        <div class="featured-image-container">
+            <img src="https://rdr.lol/u/gB1VM9.png" alt="Featured Bot Image">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+        <div class="section">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Get Capybara Pictures</h3>
+                    <p>We use the <a href="https://capy.lol/" target="_blank">capy.lol</a> API for capybara pictures.</p>
+                </div>
+                <div class="feature">
+                    <h3>Capybara Facts</h3>
+                    <p>Suggest new facts in our support server!</p>
+                </div>
+                <div class="feature">
+                    <h3>Reliable Uptime</h3>
+                    <p>You can count on CapyPic to be up and running almost always. CapyPic is proudly hosted on <a href="https://elysiannodes.uk" target="_blank">ElysianNodes</a>, which provides excellent hosting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Updates Section -->
+        <div class="section">
+            <h2>Latest Updates</h2>
+            <div class="updates">
+                <div class="update">
+                    <h3>CapyPic - VERSION 2!</h3>
+                    <p>8 November, 2024: CapyPic has been completely rewritten from messy Discord4J (java) code to new, clean, discord.py (Python) code. We'll also be moving to ElysianNodes for hosting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Image Section -->
+    <div class="container">
+        <div class="featured-image-container">
+            <img src="https://rdr.lol/u/ZqfJIh.png" alt="Featured Bot Image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Jab11n. Some rights reserved.</p>
+        <div class="social-links">
+            <a href="/privacy" target="_blank">Privacy Policy</a> |
+            <a href="/terms" target="_blank">Terms Of Use</a> |
+            <a href="https://discord.gg/3TbqBBEZCC" target="_blank">Support Server</a>
+        </div>
+    </div>
+
+</body>
+</html>
